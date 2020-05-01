@@ -10,7 +10,9 @@
     "build": "tsc",
     "dev": "tsc --watch --sourceMap",
     "lint": "eslint --ext .ts .",
-    "lint:fix": "eslint --fix --ext .ts ."
+    "lint:fix": "eslint --fix --ext .ts .",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -63,6 +65,8 @@
     "chalk": "^3.0.0",
     "ip": "^1.1.5",
     "moment": "^2.24.0",
-    "yargs": "^15.0.2"
-  }
+    "yargs": "^15.0.2",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
